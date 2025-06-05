@@ -6,8 +6,12 @@ import json
 import random
 import csv
 
-data_path='/home/hzx/fcil/dfmeta/DFL2Ldata/aircraft/images'
-savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/aircraft/split/'
+# data_path='/home/hzx/fcil/dfmeta/DFL2Ldata/aircraft/images'
+# savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/aircraft/split/'
+script_dir = os.path.dirname(os.path.abspath(__file__)) 
+parent_dir = os.path.dirname(script_dir)
+data_path = os.path.join(parent_dir, 'DFL2Ldata/aircraft/images')
+savedir = os.path.join(parent_dir, 'DFL2Ldata/aircraft/split/')
 os.makedirs(savedir, exist_ok=True)
 split_list = ['meta_train', 'meta_val', 'meta_test']
 

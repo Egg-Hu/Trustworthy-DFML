@@ -8,9 +8,14 @@ import csv
 
 import scipy.io
 
-data_path = '/home/hzx/fcil/dfmeta/DFL2Ldata/flower/jpg'
-savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/flower/split/'
-label_path='/home/hzx/fcil/dfmeta/DFL2Ldata/flower/imagelabels.mat'
+# data_path = '/home/hzx/fcil/dfmeta/DFL2Ldata/flower/jpg'
+# savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/flower/split/'
+# label_path='/home/hzx/fcil/dfmeta/DFL2Ldata/flower/imagelabels.mat'
+script_dir = os.path.dirname(os.path.abspath(__file__)) 
+parent_dir = os.path.dirname(script_dir)
+data_path = os.path.join(parent_dir, 'DFL2Ldata/DFL2Ldata/flower/jpg')
+savedir = os.path.join(parent_dir, 'DFL2Ldata/flower/split/')
+label_path = os.path.join(parent_dir, 'DFL2Ldata/flower/imagelabels.mat')
 labels_mat = scipy.io.loadmat(label_path)
 os.makedirs(savedir, exist_ok=True)
 split_list = ['meta_train', 'meta_val', 'meta_test']

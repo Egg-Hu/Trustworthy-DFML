@@ -3,14 +3,12 @@ from os import listdir
 from os.path import isfile, isdir, join
 import csv
 import os
-# data_path='/root/dfmeta/DFL2Ldata/Miniimagenet'
-# savedir = '/root/dfmeta/DFL2Ldata/Miniimagenet/split/'
-# data_path='/data1/hzx/fcil/dfmeta/DFL2Ldata/Miniimagenet'
-# savedir = '/data1/hzx/fcil/dfmeta/DFL2Ldata/Miniimagenet/split/'
-# data_path='/home/hzx/fcil/dfmeta/DFL2Ldata/Miniimagenet'
-# savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/Miniimagenet/split/'
-data_path='/home/zq_21/hzx/dfmeta/DFL2Ldata/Miniimagenet'
-savedir = '/home/zq_21/hzx/dfmeta/DFL2Ldata/Miniimagenet/split/'
+# data_path='/home/zq_21/hzx/dfmeta/DFL2Ldata/Miniimagenet'
+# savedir = '/home/zq_21/hzx/dfmeta/DFL2Ldata/Miniimagenet/split/'
+script_dir = os.path.dirname(os.path.abspath(__file__)) 
+parent_dir = os.path.dirname(script_dir)
+data_path = os.path.join(parent_dir, 'DFL2Ldata/Miniimagenet')
+savedir = os.path.join(parent_dir, 'Miniimagenet/split/')
 
 os.makedirs(savedir, exist_ok=True)
 split_list = ['meta_train', 'meta_val', 'meta_test']

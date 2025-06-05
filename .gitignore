@@ -48,7 +48,6 @@ dfmlmd_log/
 dfmlmd_result/
 
 # 数据集
-dataset/
 model_pool_*/
 
 # 其他不需要上传的中间文件夹

@@ -5,14 +5,12 @@ from os import listdir
 from os.path import isfile, isdir, join
 import csv
 import os
-# data_path='/root/dfmeta/DFL2Ldata/cifar100'
-# savedir = '/root/dfmeta/DFL2Ldata/cifar100/split/'
-# data_path='/data1/hzx/fcil/dfmeta/DFL2Ldata/cifar100'
-# savedir = '/data1/hzx/fcil/dfmeta/DFL2Ldata/cifar100/split/'
-# data_path='/home/hzx/fcil/dfmeta/DFL2Ldata/cifar100'
-# savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/cifar100/split/'
-data_path='/home/hzx/fcil/dfmeta/DFL2Ldata/omniglot/'
-savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/omniglot/split/'
+# data_path='/home/hzx/fcil/dfmeta/DFL2Ldata/omniglot/'
+# savedir = '/home/hzx/fcil/dfmeta/DFL2Ldata/omniglot/split/'
+script_dir = os.path.dirname(os.path.abspath(__file__)) 
+parent_dir = os.path.dirname(script_dir)
+data_path = os.path.join(parent_dir, 'DFL2Ldata/omniglot')
+savedir = os.path.join(parent_dir, 'DFL2Ldata/omniglot/split/')
 os.makedirs(savedir, exist_ok=True)
 split_list = ['meta_train', 'meta_test']
 
