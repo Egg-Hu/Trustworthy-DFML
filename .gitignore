@@ -1,0 +1,83 @@
+# 编译生成文件
+*.o
+*.out
+*.class
+*.exe
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.swp
+*.bak
+*.swo
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# VSCode / PyCharm 配置
+.vscode/
+.idea/
+
+# 虚拟环境/配置文件
+.env
+.venv/
+venv/
+ENV/
+
+# 本地数据/测试文件
+data/
+
+# 服务器产生的中间结果 / 训练中间文件夹
+checkpoints*/
+datapool*/
+dfmlmd_log/
+dfmlmd_result/
+
+# 数据集
+dataset/
+model_pool_*/
+
+# 其他不需要上传的中间文件夹
+preGenerate/
+pretrained/
+tsne/
+try.py
+tsne.py
+
+
+scripts/51/
+scripts/55/
+scripts/load/
+scripts/online/
+scripts/pre/
+scripts/purer/
+scripts/purer2/
+scripts/purer6/
+scripts/taco/
+scripts/weight1/
+scripts/reject1/
+
+
+method/purer.py
+method/purer2.py
+method/taco.py
+method/taco2.py
+method/taco3.py
+method/taco4.py
+method/taco5.py
+method/taco7.py
+method/tacot.py
