@@ -49,7 +49,6 @@ dfmlmd_result/
 
 # 数据集
 dataset/
-method/
 model_pool_*/
 
 # 其他不需要上传的中间文件夹
@@ -69,7 +68,7 @@ scripts/purer/
 scripts/purer2/
 scripts/purer6/
 scripts/taco/
-scripts/weight/
+scripts/weight1/
 scripts/reject1/
 
 
